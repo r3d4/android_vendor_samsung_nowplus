@@ -21,36 +21,43 @@
 PRODUCT_COPY_FILES = \
     vendor/samsung/nowplus/proprietary/bluetooth/TIInit_7.2.31.bts:lib/firmware/TIInit_7.2.31.bts
 
- 
+
 #dsp binary firmware loader
 #PRODUCT_COPY_FILES += \
 #    vendor/samsung/nowplus/proprietary/bin/cexec.out:system/bin/cexec.out
 #vendor/samsung/nowplus/proprietary/lib/libbridge.so:system/lib/libbridge.so \
-   
+
 
 # system/bin/
 PRODUCT_COPY_FILES += \
     vendor/samsung/nowplus/proprietary/bin/busybox:system/bin/busybox \
     vendor/samsung/nowplus/proprietary/bin/wlaninit:system/bin/wlaninit
-    
 
-# samsung ril 
-PRODUCT_COPY_FILES += \  
+
+# samsung ril
+PRODUCT_COPY_FILES += \
     vendor/samsung/nowplus/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     vendor/samsung/nowplus/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so\
-    vendor/samsung/nowplus/proprietary/lib/libsecgps.so:system/lib/libsecgps.so  
- 
+    vendor/samsung/nowplus/proprietary/lib/libsecgps.so:system/lib/libsecgps.so
+
 
 #gps hw dummy lib, no real gps atm.
-PRODUCT_COPY_FILES += \     
+PRODUCT_COPY_FILES += \
     vendor/samsung/nowplus/proprietary/lib/gps.nowplus.so:system/lib/gps.nowplus.so
- 
- 
+
+
 # NEON optimized rotation lib for CameraHAL
-PRODUCT_COPY_FILES += \       
+PRODUCT_COPY_FILES += \
     vendor/samsung/nowplus/proprietary/lib/librotation.so:system/lib/librotation.so
-  
-  
+
+
+#OMX libs
+PRODUCT_COPY_FILES += \
+    vendor/samsung/nowplus/proprietary/dsp/lib/libOMX.ITTIAM.AAC.decode.so:system/lib/libOMX.ITTIAM.AAC.decode.so \
+    vendor/samsung/nowplus/proprietary/dsp/lib/libOMX.ITTIAM.AAC.encode.so:system/lib/libOMX.ITTIAM.AAC.encode.so \
+    vendor/samsung/nowplus/proprietary/dsp/lib/libOMX.TI.720P.Decoder.so:system/lib/libOMX.TI.720P.Decoder.so \
+    vendor/samsung/nowplus/proprietary/dsp/lib/libOMX.TI.720P.Encoder.so:system/lib/libOMX.TI.720P.Encoder.so
+
 # dsp images
 PRODUCT_COPY_FILES += \
     vendor/samsung/nowplus/proprietary/dsp/img/720p_mp4vdec_sn.dll64P:system/lib/dsp/720p_mp4vdec_sn.dll64P \
@@ -100,10 +107,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/nowplus/proprietary/dsp/img/wmv9dec_sn.dll64P:system/lib/dsp/wmv9dec_sn.dll64P \
     vendor/samsung/nowplus/proprietary/dsp/img/yuvconvert.l64p:system/lib/dsp/yuvconvert.l64p \
     vendor/samsung/nowplus/proprietary/dsp/img/zcmsgdyn_3430.dll64P:system/lib/dsp/zcmsgdyn_3430.dll64P \
-    vendor/samsung/nowplus/proprietary/dsp/img/zcmsgPhasedyn_3430.dll64P:system/lib/dsp/zcmsgPhasedyn_3430.dll64P 
+    vendor/samsung/nowplus/proprietary/dsp/img/zcmsgPhasedyn_3430.dll64P:system/lib/dsp/zcmsgPhasedyn_3430.dll64P
 
-# sgx 
-PRODUCT_COPY_FILES += \   
+# sgx
+PRODUCT_COPY_FILES += \
     vendor/samsung/nowplus/proprietary/sgx/bin/sgx/omaplfb.ko:system/bin/sgx/omaplfb.ko \
     vendor/samsung/nowplus/proprietary/sgx/bin/sgx/pvrsrvkm.ko:system/bin/sgx/pvrsrvkm.ko \
     vendor/samsung/nowplus/proprietary/sgx/bin/sgx/rc.pvr:system/bin/sgx/rc.pvr \
