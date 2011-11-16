@@ -23,9 +23,9 @@ PRODUCT_COPY_FILES = \
 
 
 #dsp binary firmware loader
-#PRODUCT_COPY_FILES += \
-    vendor/samsung/nowplus/proprietary/bin/cexec.out:system/bin/cexec.out
-    vendor/samsung/nowplus/proprietary/lib/libbridge.so:system/lib/libbridge.so \
+PRODUCT_COPY_FILES += \
+    vendor/samsung/nowplus/proprietary/bin/cexec.out:system/bin/cexec.out \
+    vendor/samsung/nowplus/proprietary/lib/libbridge.so:system/lib/libbridge.so
 
 
 # system/bin/
