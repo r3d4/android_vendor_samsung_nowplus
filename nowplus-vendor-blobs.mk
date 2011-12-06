@@ -42,7 +42,7 @@ PRODUCT_COPY_FILES += \
 
 #gps hw dummy lib, no real gps atm.
 PRODUCT_COPY_FILES += \
-    vendor/samsung/nowplus/proprietary/lib/gps.nowplus.so:system/lib/gps.nowplus.so
+    vendor/samsung/nowplus/proprietary/lib/gps.nowplus.so:system/lib/hw/gps.nowplus.so
 
 
 # NEON optimized rotation lib for CameraHAL
