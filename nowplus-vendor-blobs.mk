@@ -34,15 +34,15 @@ PRODUCT_COPY_FILES += \
 
 
 # samsung ril
-PRODUCT_COPY_FILES += \
-    vendor/samsung/nowplus/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/nowplus/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so\
-    vendor/samsung/nowplus/proprietary/lib/libsecgps.so:system/lib/libsecgps.so
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/nowplus/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+#    vendor/samsung/nowplus/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so\
+#    vendor/samsung/nowplus/proprietary/lib/libsecgps.so:system/lib/libsecgps.so
 
 
 #gps hw dummy lib, no real gps atm.
-PRODUCT_COPY_FILES += \
-    vendor/samsung/nowplus/proprietary/lib/gps.nowplus.so:system/lib/hw/gps.nowplus.so
+#PRODUCT_COPY_FILES += \
+#    vendor/samsung/nowplus/proprietary/lib/gps.nowplus.so:system/lib/hw/gps.nowplus.so
 
 
 # NEON optimized rotation lib for CameraHAL
