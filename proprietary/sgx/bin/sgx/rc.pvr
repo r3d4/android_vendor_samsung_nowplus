@@ -13,16 +13,18 @@
 #				Limited, Unit 8, HomePark Industrial Estate,
 #				King's Langley, Hertfordshire, WD4 8LZ, U.K.
 
-# Auto-generated for omap3430_android from embedded.pj 1.5.15.2766
+# Auto-generated for omap3430_android from embedded.pj 1.6.16.4061
 #
 
 load_pvr()
 {
 	
-	insmod /system/bin/sgx/pvrsrvkm.ko
-	insmod /system/bin/sgx/omaplfb.ko
+	insmod /pvrsrvkm.ko
+	insmod /omaplfb.ko
+	insmod /bc_example.ko
 	sleep 1
 	chmod 0666 /dev/pvrsrvkm
+	chmod 0666 /dev/bc_example
 	pvrsrvinit
 	echo "Loaded PowerVR consumer services."
 	return 0;

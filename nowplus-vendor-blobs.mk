@@ -110,18 +110,16 @@ PRODUCT_COPY_FILES += \
 
 # sgx
 PRODUCT_COPY_FILES += \
-    vendor/samsung/nowplus/proprietary/sgx/bin/sgx/omaplfb.ko:system/bin/sgx/omaplfb.ko \
-    vendor/samsung/nowplus/proprietary/sgx/bin/sgx/pvrsrvkm.ko:system/bin/sgx/pvrsrvkm.ko \
     vendor/samsung/nowplus/proprietary/sgx/bin/sgx/rc.pvr:system/bin/sgx/rc.pvr \
     vendor/samsung/nowplus/proprietary/sgx/bin/pvrsrvinit:system/bin/pvrsrvinit \
-    vendor/samsung/nowplus/proprietary/sgx/lib/libfakehal.so:system/lib/libfakehal.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/libglslcompiler.so:system/lib/libglslcompiler.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/libIMGegl.so:system/lib/libIMGegl.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/libpvr2d.so:system/lib/libpvr2d.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/libpvrANDROID_WSEGL.so:system/lib/libpvrANDROID_WSEGL.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/libPVRScopeServices.so:system/lib/libPVRScopeServices.so \
-    vendor/samsung/nowplus/proprietary/sgx/lib/libsfutil.so:system/lib/libsfutil.so \
+    vendor/samsung/nowplus/proprietary/sgx/lib/libsrv_init.so:system/lib/libsrv_init.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/libsrv_um.so:system/lib/libsrv_um.so \
+    vendor/samsung/nowplus/proprietary/sgx/lib/libusc.so:system/lib/libusc.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/egl/egl.cfg:system/lib/egl/egl.cfg \
     vendor/samsung/nowplus/proprietary/sgx/lib/egl/libEGL_POWERVR_SGX530_121.so:system/lib/egl/libEGL_POWERVR_SGX530_121.so \
     vendor/samsung/nowplus/proprietary/sgx/lib/egl/libGLESv1_CM_POWERVR_SGX530_121.so:system/lib/egl/libGLESv1_CM_POWERVR_SGX530_121.so \
