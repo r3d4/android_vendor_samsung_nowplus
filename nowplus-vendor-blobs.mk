@@ -19,7 +19,7 @@
 
 # lib/firmware
 PRODUCT_COPY_FILES = \
-    vendor/samsung/nowplus/proprietary/bluetooth/TIInit_7.2.31.bts:lib/firmware/TIInit_7.2.31.bts
+    vendor/samsung/nowplus/proprietary/bluetooth/TIInit_7.2.31.bts:root/lib/firmware/TIInit_7.2.31.bts
 
 
 #dsp binary firmware loader
